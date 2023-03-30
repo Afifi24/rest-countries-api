@@ -10,7 +10,7 @@
 
 
    /* ? Light Mode Text  */
-   --Very-Dark-Blue: hsl(200, 15%, 8%);
+   --Very-Dark-Bluee: hsl(200, 15%, 8%);
    /* ? Light Mode Input */
    --Dark-Gray: hsl(0, 0%, 52%);
    /* ? Light Mode Background */
@@ -67,6 +67,8 @@
 .btn{
   background-color: var(--Dark-Blue);
   color: #fafafa;
+  transition: all 200ms;
+
 }
 .darkdetail{
   color: #fafafa;
