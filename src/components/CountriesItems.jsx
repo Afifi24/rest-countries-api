@@ -8,9 +8,9 @@ const CountriesItems = ({item,theme,AddtoDetails}) => {
        <div className='max-w-[300px] p-6 flex gap-6 flex-col'>
         <h2 className='font-bold'>{item.name.common}</h2>
         <div className='flex flex-col gap-1'>
-          <p className='font-semibold text-[14px]'>Population: <span className={`${theme ? '#fafafa':'text-gray-500'}  font-normal`}>{item.population}</span></p>
-          <p className='font-semibold text-[14px]'>Region: <span className={`${theme ? '#fafafa':'text-gray-500'}  font-normal`}>{item.region}</span></p>
-          <p className='font-semibold text-[14px]'>Capital: <span className={`${theme ? '#fafafa':'text-gray-500'}  font-normal`}>{item.capital}</span></p>
+          <p className='font-semibold text-[14px]'>Population: <span className={`${theme ? '#fafafa':'text-gray-500'}  font-normal duration-200`}>{item.population}</span></p>
+          <p className='font-semibold text-[14px]'>Region: <span className={`${theme ? '#fafafa':'text-gray-500'}  font-normal duration-200`}>{item.region}</span></p>
+          <p className='font-semibold text-[14px]'>Capital: <span className={`${theme ? '#fafafa':'text-gray-500'}  font-normal duration-200`}>{item.capital}</span></p>
         </div>
         </div>
         </Link>

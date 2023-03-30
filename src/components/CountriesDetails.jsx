@@ -6,12 +6,10 @@ const CountriesDetails = ({theme,store}) => {
   return (
     <div>
       {store ?
-      <div className={` ${theme ? 'darkdetail':''} py-20 px-8 md:px-14 flex font-NunitoSans flex-col gap-14`}>
+      <div className={` ${theme ? 'darkdetail':''} py-20 px-8 md:px-14 flex font-NunitoSans flex-col gap-20`}>
       <Link className={`px-8 flex cursor-pointer justify-center w-fit gap-1 items-center  py-2  ${theme ? 'btn':''} shadoww rounded-md hover:-translate-y-0.5 duration-200 hover:shadow-lg`} to={'/'}>
-      {/* <div > */}
       <HiOutlineArrowNarrowLeft className='text-lg'/>
         Back
-     {/* </div> */}
       </Link>
      <div className='flex gap-32  flex-col md:flex-row   md:items-start'>
           <div className='flex-1'>

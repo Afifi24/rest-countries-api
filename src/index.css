@@ -30,36 +30,36 @@
 }
 .darkMode{
   background-color: #202C37; 
-  transition: all 500ms;
+  transition: all 200ms;
 
 }
 .darkMode nav{
     background-color: var(--Dark-Blue);
     color: white;
-  transition: all 500ms;
+  transition: all 200ms;
 
   }
 .darkMode header{
     background-color: var(--Dark-Blue);
     color: white;
-  transition: all 500ms;
+  transition: all 200ms;
 
   }
 
 .lightMode{
   background-color: #fafafa;
-  transition: all 500ms;
+  transition: all 200ms;
 }
 .lightMode nav{
     background-color: #fff;
     color: var(--Very-Dark-Blue);
-  transition: all 500ms;
+  transition: all 200ms;
 
 }
 .lightMode header{
     background-color: #fff;
     color: var(--Very-Dark-Blue);
-  transition: all 500ms;
+  transition: all 200ms;
 
 }
 
