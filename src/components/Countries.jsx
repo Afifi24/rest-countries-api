@@ -1,5 +1,6 @@
 import React, { useEffect,useState } from 'react'
 import CountriesItems from './CountriesItems'
+import Search from './Search'
 const Countries = ({theme,AddtoDetails}) => {
   const [Data,setData] = useState()
   const [filteredbyletter,setFilteredbyletter] =useState()
@@ -21,6 +22,7 @@ const Countries = ({theme,AddtoDetails}) => {
   },[])
   return (
     <div className='py-20 px-8 md:px-14'>
+      <Search theme={theme}/>
      <div className='grid grid-cols-1 font-NunitoSans  md:grid-cols-2 lg:grid-cols-3  gap-y-16 gap-x-14'>
          {Data && Data.map(item=>(
               <CountriesItems AddtoDetails={AddtoDetails} theme={theme} key={item.flags.png} item={item}/>

@@ -20,16 +20,16 @@ const CountriesDetails = ({theme,store}) => {
               <div className='flex flex-col gap-8'>
               <h4 className='font-bold text-3xl'>{store.name.common}</h4>
               <div className='flex flex-col gap-3'>
-                <p> <span className='font-semibold'>Native Name:</span> jkj</p>
-                <p><span className='font-semibold'> Population: </span>2,837,743</p>
-                <p><span className='font-semibold'> Region: </span>  Europe</p>
-                <p><span className='font-semibold'> Sub Region: </span>  Southern Europe</p>
-                <p><span className='font-semibold'>  Capital: </span> Tirana</p>
+                <p> <span className='font-semibold'>Native Name:</span> {store.name.official}</p>
+                <p><span className='font-semibold'> Population: </span>{store.population}</p>
+                <p><span className='font-semibold'> Region: </span>{store.region}</p>
+                <p><span className='font-semibold'> Sub Region: </span>  {store.subregion}</p>
+                <p><span className='font-semibold'>  Capital: </span> {store.capital}</p>
               </div>
               </div>
               <div className='flex flex-col gap-1'>
                 <p> <span className='font-semibold'>  Top Level Domain: </span>  .al</p>
-                <p> <span className='font-semibold'>  Currencies: </span>  dollar</p>
+                <p> <span className='font-semibold'>  Currencies: </span> {store.currencies.name}</p>
                 <p> <span className='font-semibold'>  Languages: </span>  spanish</p>
               </div>
             </div>
@@ -37,8 +37,10 @@ const CountriesDetails = ({theme,store}) => {
                 <div>
                   <p className='font-bold'>Border <br className='hidden md:block' /> countries</p>
                 </div>
-                <div className='grid gap-3 grid-cols-2'>
-                  <button className={`px-6 flex cursor-pointer justify-center w-fit gap-1 items-center   ${theme ? 'btn':''} py-1 shadoww rounded-md hover:-translate-y-0.5 duration-200 hover:shadow-lg`}>greece</button>
+                <div className='grid gap-3 sm:grid-cols-2 md:grid-cols-2'>
+                 
+                      <button className={`px-6 flex cursor-pointer justify-center w-fit gap-1 items-center   ${theme ? 'btn':''} py-1 shadoww rounded-md hover:-translate-y-0.5 duration-200 hover:shadow-lg`}>greece</button>
+                   
                   <button className={`px-6 flex cursor-pointer justify-center w-fit gap-1 items-center  ${theme ? 'btn':''}  py-1 shadoww rounded-md hover:-translate-y-0.5 duration-200 hover:shadow-lg`}>montenigro</button>
                   <button className={`px-6 flex cursor-pointer justify-center w-fit gap-1 items-center   ${theme ? 'btn':''} py-1 shadoww rounded-md hover:-translate-y-0.5 duration-200 hover:shadow-lg`}>malawi</button>
                   <button className={`px-6 flex cursor-pointer justify-center w-fit gap-1 items-center   ${theme ? 'btn':''} py-1 shadoww rounded-md hover:-translate-y-0.5 duration-200 hover:shadow-lg`}>morocco</button>
