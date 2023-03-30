@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    /* ! Dark Mode Elements */
+   --Dark-Blue: hsl(209, 23%, 22%) ;
+    /* ! Dark Mode Background */
+   --Very-Dark-Blue: hsl(207, 26%, 17%);
+
+
+   /* ? Light Mode Text  */
+   --Very-Dark-Blue: hsl(200, 15%, 8%);
+   /* ? Light Mode Input */
+   --Dark-Gray: hsl(0, 0%, 52%);
+   /* ? Light Mode Background */
+   --Very-Light-Gray: hsl(0, 0%, 98%)
+   /* ? Dark Mode Text & Light Mode Elements */
+     --White: hsl(0, 0%, 100%);
+}
+
+.shadoww{
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+}
+
+.griditem{
+    display: grid;
+    gap: 3;
+    grid-template-columns:repeat(autofit,minmax(200px,1fr));
+}
+.darkMode{
+  background-color: #202C37; 
+  transition: all 500ms;
+
+}
+.darkMode nav{
+    background-color: var(--Dark-Blue);
+    color: white;
+  transition: all 500ms;
+
+  }
+.darkMode header{
+    background-color: var(--Dark-Blue);
+    color: white;
+  transition: all 500ms;
+
+  }
+
+.lightMode{
+  background-color: #fafafa;
+  transition: all 500ms;
+}
+.lightMode nav{
+    background-color: #fff;
+    color: var(--Very-Dark-Blue);
+  transition: all 500ms;
+
+}
+.lightMode header{
+    background-color: #fff;
+    color: var(--Very-Dark-Blue);
+  transition: all 500ms;
+
+}
+
+
+.btn{
+  background-color: var(--Dark-Blue);
+  color: #fafafa;
+}
+.darkdetail{
+  color: #fafafa;
+
+}
+.lightdetail{
+  color:var(--Dark-Gray) ;
+}
