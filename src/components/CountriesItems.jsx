@@ -3,7 +3,7 @@ import { Link,useParams } from 'react-router-dom'
 const CountriesItems = ({item,theme,AddtoDetails}) => {
   return (
     <header className='bg-white shadow-sm overflow-hidden rounded-md hover:shadow-xl duration-200 '>
-      <Link onClick={()=>AddtoDetails(item)} to={'/details'}>
+      <Link  to={'/details/'+ item.name}>
        <img className='md:h-[200px]  w-full' src={item.flags.png} alt="" />
        <div className='max-w-[300px] p-6 flex gap-6 flex-col'>
         <h2 className='font-bold'>{item.name}</h2>

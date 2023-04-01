@@ -24,8 +24,6 @@ const App = () => {
   const DetailsBorder = (element)=>{
     FetchBorder(element)
   }
-  console.log(border)
-  // console.log(store)
   useEffect(()=>{
       const item = localStorage.getItem('item')
        if(item){
@@ -39,8 +37,8 @@ const App = () => {
        <Nav ChangeTheme={ChangeTheme}/>
            <Routes>
               <Route path='/' element={  <Countries AddtoDetails={AddtoDetails} theme={theme}/>}/>
-              <Route path='/details' element={  <CountriesDetails DetailsBorder={DetailsBorder}   store={store} theme={theme} />}/>
-              <Route path='/borderDetails' element={  <BorderDetails theme={theme} border={border} />}/>
+              <Route path='/details/:name' element={  <CountriesDetails DetailsBorder={DetailsBorder}   store={store} theme={theme} />}/>
+              <Route path='/borderDetails/:borde' element={  <BorderDetails theme={theme} border={border} />}/>
            </Routes>
 
     </div>
